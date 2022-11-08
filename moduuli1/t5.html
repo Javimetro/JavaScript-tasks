@@ -5,12 +5,23 @@
     <title>t5</title>
 </head>
 <body>
-<h1>Tehtävä 5</h1>
+<h1>Karkausvuodet</h1>
 <p id="target"></p>
 <script>
+  'use strict';
 
 
-  document.querySelector('#target').innerHTML =
+  let vastaus;
+  const vuosiluku = parseInt(prompt('Kirjoita vuosiluvun: '))
+
+  if (vuosiluku % 100 == 0 && vuosiluku % 400 != 0) {
+    vastaus = 'Tämä vuosiluku ei ole karkausvuosi'
+  } else if (vuosiluku % 4 == 0 || vuosiluku % 400 == 0) {
+    vastaus = 'Tämä vuosiliku on karkausvuosi!'
+  } else {
+    vastaus = 'Tämä vuosiluku ei ole karkausvuosi'
+  }
+  document.querySelector('#target').innerHTML = vastaus;
 </script>
 
 </body>
