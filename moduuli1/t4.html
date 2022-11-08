@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t4</title>
+</head>
+<body>
+
+<h1>Hogwarts School</h1>
+<p id="target"></p>
+<script>
+  'use strict';
+
+  let vastaus;
+  const nimi = prompt('Hi, whats your name?: ')
+
+  const hattu = Math.round(Math.random() * (4 - 1) + 1);
+
+  switch (hattu) {
+    case 1:
+      vastaus = (nimi + ', you are Daredevil.');
+      break;
+
+    case 2:
+      vastaus = (nimi + ', you are Slytherin.');
+      break;
+
+    case 3:
+      vastaus = (nimi + ', you are Hufflepuff.');
+      break;
+
+    case 4:
+      vastaus = (nimi + ', you are Ravenclaw.');
+      break;
+    default:
+      vastaus = 'Mee kotiin.'
+  }
+      document.querySelector('#target').innerHTML = 'Hei ' + vastaus ;
+
+</script>
+</body>
+</html>

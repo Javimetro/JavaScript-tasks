@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t3</title>
+</head>
+<body>
+
+<h1>Greeting</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+
+        const integer1 = parseInt(prompt('Type your first integer:'));
+        const integer2 = parseInt(prompt('Type your second integer:'));
+        const integer3 = parseInt(prompt('Type your third integer:'));
+
+        let summa = integer1 + integer2 + integer3;
+        let product = integer1 * integer2 * integer3;
+        let average = summa/3;
+
+
+         document.querySelector('#target').innerHTML = 'Sum result:' + summa +'\nproduct result: ' + product +'\n average result: ' + average ;
+
+</script>
+
+</body>
+</html>
