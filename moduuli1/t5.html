@@ -14,9 +14,9 @@
   let vastaus;
   const vuosiluku = parseInt(prompt('Kirjoita vuosiluvun: '))
 
-  if (vuosiluku % 100 == 0 && vuosiluku % 400 != 0) {
+  if (vuosiluku % 100 === 0 && vuosiluku % 400 !== 0) {
     vastaus = 'Tämä vuosiluku ei ole karkausvuosi'
-  } else if (vuosiluku % 4 == 0 || vuosiluku % 400 == 0) {
+  } else if (vuosiluku % 4 === 0 || vuosiluku % 400 === 0) {
     vastaus = 'Tämä vuosiliku on karkausvuosi!'
   } else {
     vastaus = 'Tämä vuosiluku ei ole karkausvuosi'

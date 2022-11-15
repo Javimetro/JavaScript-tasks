@@ -8,7 +8,7 @@ if (luku === 1) {
 } else if (luku === 2) {
   text = 'tämä on alkuluku';
 } else {
-  for (i = 2; i < luku; i++) {
+  for (let i = 2; i < luku; i++) {
     if (luku % i === 0) {
       text = 'Ei ole alkuluku';
       break
