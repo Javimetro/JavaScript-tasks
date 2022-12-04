@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("robotomono-regular.ttf") format("truetype");
+}
+
+html {
+  font-family: "Roboto Light", Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+iframe{
+  height: 500px;
+  width: 1000px;
+}
+h1 {
+    padding-left: 50px;
+    background-color: #70d4da;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 1150px;
+}
+h2 {
+    font-size: 90%;
+    height: 50px;
+    width: 100%;
+}
+form{
+    padding-left: 50px;
+    height: 40px;
+    background-color: #70d4da;
+}
+body{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: palegoldenrod;
+}
+
+div {
+    width: 100%;
+    padding-left: 48px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-gap: 40px;
+
+}
+article{
+    display: table-cell;
+    justify-content: space-between;
+    width: 100%;
+}
+figure{
+    margin: auto;
+}
